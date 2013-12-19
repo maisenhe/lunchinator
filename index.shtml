@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+</head>
+<body>
+    <script type='text/javascript' src='ssi/jquery-2.0.3.min.js'></script>
+    <link rel='stylesheet' type='text/css' href='ssi/jquery.mobile-1.4.0-rc.1.min.css'/>
+    <script type='text/javascript' src='ssi/jquery.mobile-1.4.0-rc.1.min.js'></script>
+    <script type='text/javascript' src='lunchinator.js'></script>
+    <!--#include file="lunch.html" -->
+</body>
+</HTML> 

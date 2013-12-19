@@ -1,0 +1,105 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<body>
+    <div data-role="page" id="main">
+        <div data-role="header" data-theme="b">
+             <h3>Lunchinator</h3>
+
+        </div>
+        <div data-role="content">
+            <div id="foo"></div>
+            <div class="content-primary">
+                <div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+                     <h3>Actions</h3> 
+                    <form>
+                        <fieldset data-role="collapsible" data-theme="b" data-content-theme="b">
+                            <legend>Search</legend>
+                            <label for="tags">Tags:</label>
+                            <input type="text" name="tags" id="tags" />
+                            <p>
+                                <label>Rating
+                                    <select id="rating">
+                                        <option value="none">None</option>
+                                        <option value=0>0 stars i.e. applebees</option>
+                                        <option value=1>1 Star</option>
+                                        <option value=2>2 Stars</option>
+                                        <option value=3>3 Stars</option>
+                                        <option value=4>4 Stars</option>
+                                        <option value=5>5 Stars</option>
+                                    </select>
+                                </label>
+                                <label>Cost
+                                    <select id="cost">
+                                        <option value="none">None</option>
+                                        <option value=1>$</option>
+                                        <option value=2>$$</option>
+                                        <option value=3>$$$</option>
+                                        <option value=4>$$$$</option>
+                                    </select>
+                                </label>
+                                <label>Type
+                                    <select id="foodType"></select>
+                                </label>
+                                <hr/>
+                                <input type="button" value="Search me!" id="searchplace" />
+                                <hr/>
+                            </p>
+                        </fieldset>
+                        <fieldset data-role="collapsible" data-theme="b" data-content-theme="b">
+                            <legend>Add</legend>
+                            <label for="newplace">Place:</label>
+                            <input type="text" name="newplace" id="newplace" value="applebees" />
+                            <label for="tags">Tags:</label>
+                            <input type="text" name="tags" id="tags" value="crap" />
+                            <label for="userid">User Name</label>
+                            <input type="text" name="userid" id="userid" value="maisenhe" />
+                            <label for="date">Date last visited:</label>
+                            <input type="date" name="date" id="date" value="" />
+                            <p>
+                                <label>Rating
+                                    <select id="rating">
+                                        <option value="0">0 stars i.e. applebees</option>
+                                        <option value="1">1 Star</option>
+                                        <option value="2">2 Stars</option>
+                                        <option value="3">3 Stars</option>
+                                        <option value="4">4 Stars</option>
+                                    </select>
+                                </label>
+                                <label>Cost
+                                    <select id="cost">
+                                        <option value="1">$</option>
+                                        <option value="2">$$</option>
+                                        <option value="3">$$$</option>
+                                        <option value="4">$$$$</option>
+                                    </select>
+                                </label>
+                                <label>Type
+                                    <select id="addFoodType"></select>
+                                </label>
+                                <hr/>
+                                <div data-role="controlgroup" data-type="horizontal">
+                                    <input type="button" value="Add Place" id="addplace" />
+                                    <input type="button" value="Save to Disk" id="saveMe" />
+                                </div>
+                                <hr/>
+                        </fieldset>
+                        <fieldset data-role="collapsible" data-theme="b" data-content-theme="b">
+                            <legend>Admin</legend>
+                            <div data-role="controlgroup" data-type="horizontal">
+                                <input type="button" value="Display Disk" id="showMe" />
+                                <input type="button" value="delete all items on Disk" id="deleteMe" />
+                            </div>
+                            <div data-role="collapsible" id="debugResults" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+                                 <h3>Debug</h3>
+
+                                <div id="debug"></div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div data-role="collapsible" id="results" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+                     <h3>Results</h3>
+
+                    <div id="resultOutput"></div>
+                </div>
+                <!--/content-primary -->
+</body>
